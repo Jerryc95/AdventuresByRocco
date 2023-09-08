@@ -94,11 +94,28 @@ p {
 }
 
 /* NAVBAR */
+.logo-container {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  margin-left: 15px;
+}
+
 .title-text {
   font-size: 1.8rem;
-  margin-left: 15px;
-  width: 30%;
+  width: 100%;
   color: #034078;
+}
+
+.title-text a {
+  padding-left: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
 }
 
 header {
@@ -497,6 +514,10 @@ ul.header-images {
   padding: 8px 10px;
 }
 
+.experience-row a{
+  text-decoration: none;
+}
+
 .universal-option h4 {
   color: #fefcfbe6;
   font-weight: 500;
@@ -597,8 +618,7 @@ textarea {
 }
 
 .trip-heading-image-container {
-  /* this needs to be updated for each page */
-  background-image: url(images/disney/disneyworld.jpg);
+  /* background-image: url(images/disney/disneyworld.jpg); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -606,6 +626,46 @@ textarea {
   width: 100%;
   height: 700px;
   position: relative;
+}
+
+.disney-world {
+  background-image: url(images/disney/disneyworld.jpg);
+}
+
+.disney-land {
+  background-image: url(images/disney/disneyland.jpg);
+}
+
+.disney-cruise {
+  background-image: url(images/disney/disneycruise.jpg);
+}
+
+.disney-adventure {
+  background-image: url(images/disney/disneyadventures.jpg);
+}
+
+.nat-geo-expedition {
+  background-image: url(images/disney/natgeoexpedition.jpg);
+}
+
+.universal-hollywood {
+  background-image: url(images/universal/hogwartsCastle.jpg);
+}
+
+.universal-orlando {
+  background-image: url(images/universal/universalOrlando.jpg);
+}
+
+.all-inclusive {
+  background-image: url(images/disney/natgeoexpedition.jpg);
+}
+
+.tastes-of-countries {
+  background-image: url(images/disney/natgeoexpedition.jpg);
+}
+
+.world-cruises {
+  background-image: url(images/disney/natgeoexpedition.jpg);
 }
 
 .trip-heading-image {
@@ -833,6 +893,12 @@ textarea {
   margin: 0;
 }
 
+@media only screen and (max-width: 1015px) {
+  .logo-container {
+    width: 30%;
+  }
+}
+
 /* TABLET */
 @media only screen and (max-width: 975px) {
   /* NAV */
@@ -840,6 +906,8 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-items: center;
+    align-content: center;
     justify-content: space-between;
   }
 
@@ -856,7 +924,7 @@ textarea {
     display: block;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 80px;
     right: 0;
     background-color: #fefcfb;
     transform: translateY(-45px);
