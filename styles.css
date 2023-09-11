@@ -193,6 +193,8 @@ nav li.request-action a:hover {
   background-color: #001f54;
   margin: 5px 0;
   transition: 0.4s;
+  color: transparent;
+
 }
 
 .dropdown-menu {
@@ -550,6 +552,22 @@ ul.header-images {
   justify-content: flex-start;
 }
 
+.other-adventures {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.other-adventures h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.other-adventures p  {
+  width: 35%;
+  justify-content: center;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -562,6 +580,7 @@ ul.header-images {
   width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .form-container {
@@ -569,6 +588,10 @@ ul.header-images {
   flex-direction: column;
   width: 400px;
   justify-content: center;
+}
+
+.form-submission-container {
+  display: none;
 }
 
 .contact-section form {
@@ -600,9 +623,12 @@ textarea {
   font-size: medium;
 }
 
+
 .contact-section button:hover {
   background-color: #1282a2;
 }
+
+
 
 /* PAGE DETAILS */
 .trip-container {
@@ -713,6 +739,7 @@ textarea {
 .trip-details-container {
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
   z-index: 500;
+  margin-bottom: 15px;
 }
 
 .trip-details-row {
@@ -739,9 +766,9 @@ textarea {
   grid-gap: 10px;
   padding: 10px;
   width: 43%;
-  height: 370px;
+  height: 400px;
   justify-content: center;
-  /* justify-items: center; */
+  align-content: center;
   align-items: center;
 }
 
@@ -751,10 +778,11 @@ textarea {
   padding: 20px;
   text-align: start;
   width: 235px;
-  height: 125px;
+  height: 155px;
   border-radius: 8px;
   border: 1px solid #fefcfb44;
   position: relative;
+  align-items: center;
 }
 
 .trip-quick-view-grid-item::before {
@@ -835,13 +863,13 @@ textarea {
   display: flex;
   justify-content: center;
   padding-bottom: 3rem;
+  margin-top: 25px;
 }
 
 /* CONTACT PAGE */
 .contact-container {
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   justify-content: space-around;
   align-items: center;
   margin-top: 8rem;
@@ -855,6 +883,7 @@ textarea {
   border-radius: 50%;
   object-fit: cover;
 }
+
 
 /* TESTIMONALS PAGE */
 .testimonals-container {
@@ -893,6 +922,65 @@ textarea {
   margin: 0;
 }
 
+.testimonals-container button {
+  background-color: #034078;
+  color: #fefcfb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.testimonals-section .form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonals-section .form-container h3 {
+  align-items: center;
+}
+
+.testimonals-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimonals-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonals-section input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fefcfb;
+}
+
+.testimonals-section button {
+  background-color: #034078;
+  color: #fefcfb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+
+.testimonals-section button:hover {
+  background-color: #1282a2;
+}
+
+
 @media only screen and (max-width: 1015px) {
   .logo-container {
     width: 30%;
@@ -926,7 +1014,7 @@ textarea {
     position: absolute;
     top: 80px;
     right: 0;
-    background-color: #fefcfb;
+    background-color: transparent;
     transform: translateY(-45px);
     margin-right: 20px;
     
@@ -1073,6 +1161,7 @@ textarea {
     flex-direction: column;
     padding-right: 1.8rem;
     padding-left: 1.8rem;
+    padding-bottom: 15px;
   }
 
   .trip-details {

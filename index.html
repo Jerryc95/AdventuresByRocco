@@ -78,7 +78,7 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown-menu">
+          <!-- <li class="dropdown-menu">
             <a href="#other-adventures">Other Adventures</a>
             <ul class="dropdown-content">
               <li>
@@ -97,7 +97,7 @@
                 >
               </li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="./testimonals.html">Testimonals</a></li>
           <li class="request-action"><a href="./contact.html">Contact</a></li>
         </ul>
@@ -311,35 +311,37 @@
 
         <div class="experience-section other-adventures">
           <h2 id="other-adventures">OTHER ADVENTURES TO MAKE WAY</h2>
+          <p>
+            Set sail on a world of all-inclusive wonders! From luxurious cruise
+            escapes to comprehensive vacation packages, I specialize in curating
+            exceptional adventures tailored exclusively for you. Let me be your
+            guide to the world ofcruises and destinations, ensuring each journey
+            is a seamless and unforgettable exploration of the globe's
+            treasures.
+          </p>
           <ul>
             <li>
-              <a href="./trips/otherAdventures/worldCruises.html">
-                <img
-                  class="experience-image"
-                  src="./images/rocco/disney28.jpeg"
-                  alt="cruise"
-              /></a>
-
+              <img
+                class="experience-image"
+                src="./images/rocco/cruises.jpeg"
+                alt="cruise"
+              />
               <h4>Cruises</h4>
             </li>
             <li>
-              <a href="./trips/otherAdventures/tastesOfCountries.html">
-                <img
-                  class="experience-image"
-                  src="./images/rocco/disney19.jpeg"
-                  alt="country"
-              /></a>
-
+              <img
+                class="experience-image"
+                src="./images/rocco/tastesOfCountries.jpeg"
+                alt="country"
+              />
               <h4>Tastes of Other Countries</h4>
             </li>
             <li>
-              <a href="./trips/otherAdventures/allInclusive.html">
-                <img
-                  class="experience-image"
-                  src="./images/rocco/disney17.jpeg"
-                  alt="all inclusive"
-              /></a>
-
+              <img
+                class="experience-image"
+                src="./images/rocco/allInclusive.jpeg"
+                alt="all inclusive"
+              />
               <h4>All Inclusive</h4>
             </li>
           </ul>
@@ -356,20 +358,28 @@
           begin!
         </p>
         <div class="form-container">
-          <form action="submitForm.php" method="post">
+          <form
+            id="contact-form"
+            name="contact"
+            action="https://mail-server-production.up.railway.app/adventures-by-rocco"
+            method="POST"
+          >
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required />
-
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              required
+            />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send</button>
+            <button type="submit" onclick="">Send</button>
           </form>
         </div>
       </div>
