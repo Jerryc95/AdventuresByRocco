@@ -256,8 +256,8 @@ ul.header-images {
 
 .header-image {
   display: block;
-  width: 90%;
-  height: auto;
+  /* width: 90%;
+  height: auto; */
   margin: 5px;
   transform: scale(1.2);
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -1125,6 +1125,10 @@ textarea {
     font-size: 1rem;
   }
 
+  .other-adventures p  {
+    width: 95%;
+  }
+
   .contact-section p {
     width: 95%;
   }
@@ -1142,7 +1146,6 @@ textarea {
     height: 400px;
     object-position: 0% 900%;
     position: relative;
-    /* background-size: contain; */
   }
 
   .trip-heading-overlay {
