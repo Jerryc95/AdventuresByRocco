@@ -46,21 +46,21 @@ function animateFloatingOffsetItems() {
 
 window.addEventListener("scroll", animateFloatingOffsetItems);
 
-function toggleGrid() {
-  const toggleButton = document.getElementById("toggle");
-  const grid = document.getElementById("toggle-grid");
+// function toggleGrid() {
+//   const toggleButton = document.getElementById("toggle");
+//   const grid = document.getElementById("toggle-grid");
 
-  toggleButton.addEventListener("click", () => {
-    if (grid.style.display === "none") {
-      grid.style.display = "inline-grid";
-      toggleButton.textContent = "Show Less";
-    } else {
-      toggleButton.textContent = "Show More";
-    }
-  });
-}
+//   toggleButton.addEventListener("click", () => {
+//     if (grid.style.display === "none") {
+//       grid.style.display = "inline-grid";
+//       toggleButton.textContent = "Show Less";
+//     } else {
+//       toggleButton.textContent = "Show More";
+//     }
+//   });
+// }
 
-window.onload = toggleGrid();
+// window.onload = toggleGrid();
 
 function toggleMobileMenu() {
   const mobileMenu = document.getElementById("mobile-menu");

@@ -49,6 +49,7 @@ function changeNavbarOnScroll() {
 window.addEventListener("scroll", changeNavbarOnScroll);
 
 function toggleMobileMenu() {
+  console.log('clicked')
     const mobileMenu = document.getElementById("mobile-menu");
     const navList = document.getElementById("nav-items");
     const nav = document.getElementById("nav")
