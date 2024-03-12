@@ -34,6 +34,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #fefcfb;
+  /* background-color: #fff; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -279,6 +280,16 @@ ul.header-images {
 
 .header {
   margin-bottom: 12rem;
+}
+
+.header-logo-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.header-logo {
+  width: 50%;
 }
 
 .about {
