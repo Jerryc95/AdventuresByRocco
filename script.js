@@ -48,6 +48,25 @@ function changeNavbarOnScroll() {
 
 window.addEventListener("scroll", changeNavbarOnScroll);
 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  fetch("https://mail-server-production.up.railway.app/adventures-by-rocco/testimonal", {
+      method: "POST",
+      body: new FormData(this)
+  })
+  .then(response => {
+      if (response.ok) {
+          window.location.href = "index.html"; // Redirect on success
+      } else {
+          // Handle error
+      }
+  })
+  .catch(error => {
+      // Handle error
+  });
+});
+
 function toggleMobileMenu() {
   console.log('clicked')
     const mobileMenu = document.getElementById("mobile-menu");
